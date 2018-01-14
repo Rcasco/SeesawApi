@@ -38,6 +38,8 @@ namespace TodoApi
 		{
             app.UseCors("AllowAllHeaders");
 			app.UseMvc();
+            app.UseStaticFiles();
+            app.UseDeveloperExceptionPage();
 		}
 	}
 }
